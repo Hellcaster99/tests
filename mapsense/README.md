@@ -4,7 +4,7 @@
 1) npm install
 2) npm run dev
 
-##Features to note:
+## Features to note:
 
 **Form validation**
 1) only text can be entered in name filed (reg exp).
