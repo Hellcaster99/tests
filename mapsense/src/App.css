@@ -1,0 +1,291 @@
+.homeContainer{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.bgContainer{
+  background: url(/images/bg.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 57%;
+  height: 100%;
+  position: relative;
+  padding: 3% 4%;
+}
+
+.shade{
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 40%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.text{
+  width: 30vw;
+  position: absolute;
+  z-index: 1;
+}
+
+.text h1, .text p{
+  color: #fff;
+}
+
+.text h1{
+  width: 100%;
+  font-size: 3vw;
+  transform: translate3d(-2%,0,0);
+  margin-bottom: 5px;
+}
+
+.text p{
+  width: 60%;
+  font-size: 1vw;
+}
+
+.heroContainer{
+  width: 43%;
+  height: 100%;
+  padding: 3%;
+}
+
+.logoContainer{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.logoContainer img{
+  width: 200px;
+  height: 80px;
+  transform: translate3d(12%,0,0);
+}
+
+.formContainer{
+  width: 100%;
+  height: calc(100% - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-group{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 18%;
+  margin-bottom: 2%;
+}
+
+.input-group:nth-child(3){
+  margin-bottom: 10%;
+}
+
+.input-group label{
+  font-size: 20px;
+}
+
+.input-group input{
+  padding: 3% 5%;
+  border: none;
+  width: 100%;
+  height: 60%;
+  background-color: #ececec;
+  color: rgb(104, 104, 104);
+  font-size: 20px;
+}
+
+.input-group input::placeholder{
+  color: #adadad;
+}
+
+.input-group input:focus{
+  outline: none;
+}
+
+.input-group p{
+  color: #ff3838;
+}
+
+.button-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 28%;
+}
+
+.button-group button{
+  padding: 3%;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  width: 100%;
+  height: 43%;
+  border: none;
+  cursor: pointer;
+}
+
+.button-group button:disabled{
+  cursor:not-allowed
+}
+
+.button-group button:nth-child(1){
+  background-color: #332272;
+}
+
+.button-group button:nth-child(2){
+  background-color: #ff3838;
+}
+
+.dataContainer{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 3% 5%;
+}
+
+.userContainer{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.userDetails{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+}
+
+.userDetails h2, .userDetails h4{
+  font-weight: 400;
+  color: #545454;
+  text-transform: capitalize;
+}
+
+.userDetails h2:nth-child(2){
+  margin-left: 5px;
+}
+
+.userDetails span{
+  margin-right: 5px;
+}
+
+.tableContainer{
+  width: 100%;
+  height: calc(100% - 200px);
+  display: flex;
+  align-items: flex-start;
+}
+
+.table{
+  width: 100%;
+  margin-top: 0.5%;
+}
+
+.table th{
+  background-color: #332272 !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.table th::before{
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.table tr:nth-child(odd){
+  background-color: #ececec !important;
+}
+
+.table tr:nth-child(even){
+  background-color: #f9f9f9 !important;
+}
+
+.anticon{
+  color: #fff !important;
+}
+
+ul li{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+ul li button{
+  background-color: #332272 !important;
+  color: #fff !important;
+}
+
+.btnContainer{
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btnContainer button{
+  padding: 1% 4%;
+  color: #fff;
+  font-size: 1.88vw;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.btnContainer button:nth-child(1){
+  background-color: #ff3838;
+}
+
+.btnContainer button:nth-child(2){
+  background-color: #332272;
+}
+
+@media screen and (max-width:860px){
+  .homeContainer{
+    flex-direction: column;
+    min-height: 200vh;
+  }
+
+  .text{
+    width: 50vw;
+  }
+
+  .text h1{
+    width: 50vw;
+    font-size: 50px;
+  }
+
+  .text p{
+    width: 75%;
+    font-size: 18px;
+  }
+
+  .bgContainer{
+    width: 100%;
+    height: 100%;
+  }
+
+  .heroContainer{
+    width: 100%;
+    height: 100%;
+  }
+}
