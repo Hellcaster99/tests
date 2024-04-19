@@ -17,7 +17,7 @@ const Home = () => {
     const {register, handleSubmit, formState:{errors}} = useForm({ shouldUseNativeValidation: true });
     const onSubmit = async data => {
         setDisabled(true);
-        await fetch(`${import.meta.env.VITE_URL}?pincode=${data.pincode}`)
+        await fetch(`https://65e5e94cd7f0758a76e7bb2d.mockapi.io/api/v1/findByPincode?pincode=${data.pincode}`)
         .then((res)=>{
             if(res.ok){
                 return res;
