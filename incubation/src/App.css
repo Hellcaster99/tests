@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  line-height: 0.9em;
+  letter-spacing: 0.01em;
+}
+
+.appContainer{
+  width: 100%;
+  min-height: 100vh;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+
+.header{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+button{
+  border: none;
+  padding: 3% 5%;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  background-color: green;
+  border-radius: 20px;
+}
+
+.quiz{
+  width: 500px;
+  min-height: 50px;
+}
+
+.quiz form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.questionContainer{
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #ececec;
+  padding: 4% 3%;
+}
+
+.questionBox{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.questionBox ol{
+  list-style: 1;
+  margin-left: 3%;
+}
+
+.questionBox ol li{
+  margin-bottom: 5px;
+}
+
+.questionContainer label{
+  color: #4e4d4d;
+}
+
+.questionContainer p{
+  color: red;
+}
+
+.questionContainer input{
+  padding: 2%;
+  border-radius: 5px;
+  border: none;
+}
+
+.questionContainer input:focus{
+  outline: none;
+}
+
+@media screen and (max-width:550px){
+  .questionContainer{
+    gap: 10px;
+  }
+
+  .header, .quiz{
+    width: 95%;
+  }
+
+  .questionBox h4{
+    font-size: 13px;
+  }
+
+  .questionBox h2{
+    font-size: 18px;
+  }
+
+  .questionBox ol li{
+    font-size: 12px;
+  }
+}
